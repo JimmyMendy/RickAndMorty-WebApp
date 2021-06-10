@@ -114,7 +114,7 @@ export const getStaticProps = async () => {
   const { data } = await client.query({
     query: gql`
       query {
-        characters(page: 3){
+        characters(page: 1){
           info{
             count
             pages
